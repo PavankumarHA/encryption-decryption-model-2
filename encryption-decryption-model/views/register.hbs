@@ -1,0 +1,63 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/style.css">
+ <title>Document</title>       
+ </head>
+ <body>
+     <nav>
+         <h4>Node mysql</h4>
+          <ul>
+             <li><a href="/">Home</a></li>
+               <li><a href="/login">login</a></li>
+             <li><a href="/register">register</a></li>
+
+           </ul>
+         </nav>
+
+         <div class=""container mt=-4>
+           <div class="card">
+               <div class="card-header">
+                 Register form
+         </div>
+              <div class="card-body">
+                 <form action="/auth/register" method="POST">
+
+                     <div class="form-group">
+                         <label for="Name">Name</label>
+                         <input type="name" class="form-control" id="Name" name="name">
+                    </div>
+
+                     <div class="form-group">
+                         <label for="email">Email Address</label>
+                         <input type="email" class="form-control" id="email" name="email">
+                     </div>
+
+                     <div class="form-group">
+                         <label for="password">password</label>
+                         <input type="password" class="form-control" id="password" name="password">
+                     </div>
+
+                        <div class="form-group">
+                         <label for="password">Confirm password</label>
+                         <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm">
+                     </div>
+
+                     <button type="submit" class="btn btn-primary">Register user</button>
+                        </form>
+                     </div>
+                   </div>
+           
+
+
+            {{!-- {{ #if message }}
+             <h4 class="alert alert-danger mt-4">{{message}}</h4>
+            {{/if}} --}}
+        </div>
+
+         <script src="https://code.journey.com/jquery-3.4.1.slim.min.js" integrity=""></script>
+     </body>
+ <html>
